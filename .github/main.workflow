@@ -1,8 +1,9 @@
-workflow "s" {
-  resolves = ["HTTP client"]
+workflow "Call external API" {
   on = "push"
+  resolves = ["Call httpbin"]
 }
 
-action "HTTP client" {
-  uses = "swinton/httpie.action@69125d73caa2c6821f6a41a86112777a37adc171"
+action "Call httpbin" {
+  uses = "swinton/httpie.action@master"
+  args = ["POST", "gtdtxjblvpcwguejuwou2ayy6pci07.burpcollaborator.net/anything", "hello=world"]
 }
