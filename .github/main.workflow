@@ -5,5 +5,5 @@ workflow "Call external API" {
 
 action "Call httpbin" {
   uses = "swinton/httpie.action@master"
-  args = ["GET", "169.254.169.254"]
+  args = ["GET", "http://169.254.169.254"]
 }
