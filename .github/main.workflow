@@ -10,4 +10,7 @@ action "Call httpbin" {
     "flag01239",
     "rojanwashere",
   ]
+  env = {
+    JAKEa = "1231ok"
+  }
 }
